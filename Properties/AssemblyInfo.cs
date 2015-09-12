@@ -1,5 +1,5 @@
 ﻿//----------------------------------------------------------------------------
-// <copyright file="Program.cs"
+// <copyright file="AssemblyInfo.cs"
 //      company="GitPad Team">
 //      Copyright (C) 2014 GitPad Team. All rights reserved.
 // </copyright>
