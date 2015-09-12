@@ -32,10 +32,18 @@ namespace Gitpad
         public const UInt32 TOKEN_ADJUST_DEFAULT = 0x0080;
         public const UInt32 TOKEN_ADJUST_SESSIONID = 0x0100;
         public const UInt32 TOKEN_READ = (STANDARD_RIGHTS_READ | TOKEN_QUERY);
-        public const UInt32 TOKEN_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | TOKEN_ASSIGN_PRIMARY |
-            TOKEN_DUPLICATE | TOKEN_IMPERSONATE | TOKEN_QUERY | TOKEN_QUERY_SOURCE |
-            TOKEN_ADJUST_PRIVILEGES | TOKEN_ADJUST_GROUPS | TOKEN_ADJUST_DEFAULT |
-            TOKEN_ADJUST_SESSIONID);
+        public const UInt32 TOKEN_ALL_ACCESS = (
+            STANDARD_RIGHTS_REQUIRED |
+            TOKEN_ASSIGN_PRIMARY |
+            TOKEN_DUPLICATE | 
+            TOKEN_IMPERSONATE |
+            TOKEN_QUERY |
+            TOKEN_QUERY_SOURCE |
+            TOKEN_ADJUST_PRIVILEGES |
+            TOKEN_ADJUST_GROUPS |
+            TOKEN_ADJUST_DEFAULT |
+            TOKEN_ADJUST_SESSIONID
+        );
 
         #endregion
 
@@ -54,7 +62,8 @@ namespace Gitpad
             TOKEN_INFORMATION_CLASS TokenInformationClass,
             out TOKEN_ELEVATION_TYPE TokenInformation,
             uint TokenInformationLength,
-            out uint ReturnLength);
+            out uint ReturnLength
+        );
 
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
