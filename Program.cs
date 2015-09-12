@@ -1,15 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.IO;
-using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Windows.Forms;
+﻿//----------------------------------------------------------------------------
+// <copyright file="Program.cs"
+//      company="GitPad Team">
+//      Copyright (C) 2014 GitPad Team. All rights reserved.
+// </copyright>
+// <author>GitPad Team</author>
+// <description>This is the main code for GitPad.</description>
+// <version>v1.4.0 2014-09-16</version>
+//
+// Based on: https://github.com/GitHub/GitPad
+//
+//----------------------------------------------------------------------------
 
 namespace Gitpad
 {
+    using System;
+    using System.ComponentModel;
+    using System.Diagnostics;
+    using System.IO;
+    using System.Reflection;
+    using System.Runtime.InteropServices;
+    using System.Text;
+    using System.Windows.Forms;
+
     public enum LineEndingType
     {
         Windows, /*CR+LF*/
